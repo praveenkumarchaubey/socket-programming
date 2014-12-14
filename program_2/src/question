@@ -1,0 +1,19 @@
+Assignment2:
+ 
+Write a client server application to do the following:
+ 
+Client side:
+1.       Client will connect to server.
+2.       Client will accept number from user one by one till the user inputs “0”.
+3.       On receiving “0” the client will send “0” and close the connection.
+4.       The client will send the integer to server.
+5.       The client will receive the response from server.
+6.       The client will display the response from server and then accept the next number from user.
+ 
+Server:
+1.       The server will accept connection from client.
+2.       The server will receive from client till it receives “0”.
+3.       On receiving “0”, the server will close the connection.
+4.       The server will convert the number into its corresponding binary value.
+5.       The server will send the binary of the integer to client and then wait for the next integer.
+ 
