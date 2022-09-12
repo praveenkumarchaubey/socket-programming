@@ -1,22 +1,20 @@
 Assignment 1:
- 
+
 Write a client server application that will do the following:
- 
+
 Client side:
-1.       Client will accept “n” number of strings from user from command line.
-2.       Client will connect to server.
-3.       Client will concatenate all these strings using a delimiter, in a buffer and send this buffer to the server.
-4.       Client will receive the response from server .
-5.       Client will display the response.
-6.       Client will close connection with server.
- 
+1. Client will accept “n” number of strings from user from command line.
+2. Client will connect to server.
+3. Client will concatenate all these strings using a delimiter, in a buffer and send this buffer to the server.
+4. Client will receive the response from server .
+5. Client will display the response.
+6. Client will close connection with server.
+
 Server:
-1.       Server will accept connection from client.
-2.       Server will read data sent by client.
-3.       Server will extract the strings sent by client and find the length of each string.
-4.       Server will create a buffer to send the response in the following format:
-	 String1 len1 string2 len2 string3 len3…..
-5.       Server will close connection with client.
- 
-Note: Code should be modular. Follow ACG.
+1. Server will accept connection from client.
+2. Server will read data sent by client.
+3. Server will extract the strings sent by client and find the length of each string.
+4. Server will create a buffer to send the response in the following format:
+       String1 len1 string2 len2 string3 len3…..
+5. Server will close connection with client.
 

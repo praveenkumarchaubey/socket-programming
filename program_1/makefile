@@ -3,10 +3,10 @@ CC = gcc
 FLAGS = -c -Wall
 
 #DESTINATION
-SRC = ../src/
-HDRS = ../include/
-OBJ = ../obj/
-BIN = ../bin/
+SRC = ./src/
+HDRS = ./include/
+OBJ = ./
+BIN = ./
 
 $(BIN)all : $(BIN)server $(BIN)client
 
@@ -18,11 +18,9 @@ $(BIN)client : $(OBJ)client.o
 
 $(OBJ)server.o : $(SRC)server.c $(HDRS)header.h
 	$(CC) $(FLAGS) $(SRC)server.c -I $(HDRS)
-	mv server.o $(OBJ)
 
 $(OBJ)client.o : $(SRC)client.c $(HDRS)header.h
 	$(CC) $(FLAGS) $(SRC)client.c -I $(HDRS)
-	mv client.o $(OBJ)
 
 clean :
 	rm $(OBJ)*.o
